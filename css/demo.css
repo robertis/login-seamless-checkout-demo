@@ -1,0 +1,309 @@
+a {
+	color: #69c;
+}
+a:hover,
+.banner .modal a:hover {
+	color: #369;
+	cursor: pointer;
+}
+
+/**
+ * GLOBAL CLASSES
+ */
+.alert-pop {
+	color: #7f612f;
+}
+.delete,
+.error {
+	color: #900;
+}
+.tiny {
+	font-size: .75em;
+}
+.plea {
+	font-size: 1.125em;
+	margin-bottom: 2em;
+}
+.thanks {
+	clear: both;
+	font-family: Times, serif;
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+}
+.btn + a {
+	padding-left: 1em;
+}
+.form.well fieldset {
+	border-top: 1px solid #ddd;
+	margin-top: 1em;
+	padding-top: .25em;
+}
+
+/**
+ * SECTION SPECIFIC
+ */
+.banner,
+.footer {
+	background: #444;
+	clear: both;
+	color: #999;
+	padding: .5em 1em;
+}
+.footer {
+	text-align: center;
+}
+.banner .container {
+	position: relative;
+}
+.brand {
+	color: #999;
+	font-size: 3em;
+	margin: .25em 0;
+}
+.brand a {
+	color: #999;
+	text-decoration: none;
+}
+.banner a:hover,
+.footer a:hover {
+	color: #def;
+}
+.subtitle {
+	background: #eee;
+	margin-bottom: 3em;
+	text-align: center;
+}
+.subtitle h2 {
+	color: #666;
+	font-family: Times, serif;
+	font-size: 1.75em;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0 auto;
+}
+.login-out {
+	margin: 0;
+	text-align: right;
+}
+.login-choices {
+	display: table;
+	width: 100%;
+}
+.login-choices > div {
+	display: table-cell;
+	padding: 1em 1em 0;
+	vertical-align: middle;
+	width: 45%;
+}
+.login-choices .or {
+	color: #f90;
+	font: 400 italic 2em Times, serif;
+	padding: 0;
+	text-align: center;
+	width: 10%;
+}
+.or:before,
+.or:after {
+	border-left: 1px solid #ccc;
+	content: '';
+	height: 45%;
+	left: 50%;
+	position: absolute;
+}
+.or:before {
+	top: 0;
+}
+.or:after {
+	bottom: 0;
+}
+.store-login label,
+.store-login input {
+	display: block;
+}
+
+.storefront,
+.storefront li {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+.item {
+	-webkit-transition: 200ms ease;
+	   -moz-transition: 200ms ease;
+	        transition: 200ms ease;
+	float: left;
+	line-height: 1.25;
+	position: relative;
+	width: 20%;
+}
+.item-link {
+	background: #e5f2ff;
+	border: 1px solid #fff;
+	color: #777;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+.item-link:hover {
+	background: #cce5ff;
+	text-decoration: none;
+}
+.homepage .item-link:hover:after {
+	color: #333;
+	content: 'click to add to cart';
+	font-size: 1em;
+	left: 0;
+	position: absolute;
+	top: .125em;
+	width: 100%;
+}
+.item-link figure {
+	margin: .5em 0;
+	padding: 0;
+}
+.image {
+	font-size: 5em;
+}
+.title {
+	margin: 0;
+}
+.price {
+	font-size: 2em;
+	font-weight: 400;
+	margin: 0;
+}
+
+.cart .image {
+	font-size: 2em;
+	text-align: right;
+}
+.cart .title,
+.cart .price,
+.invoice .price,
+.invoice .detail {
+	font-size: 1.5em;
+}
+.cart .price,
+.table .text-right {
+	text-align: right;
+}
+/*
+.summary-row td {
+	line-height: 1;
+}
+*/
+.table-hover tbody tr.summary-row:hover > td,
+.table-hover tbody tr.summary-row:hover > th {
+  background-color: transparent;
+}
+.action p {
+	margin: 0;
+	padding: 0;
+}
+.total.price {
+	border-top: 2px solid #ccc;
+	color: #999;
+	font-size: 2em;
+	text-align: right;
+}
+
+#newsletter {
+	margin: 0;
+}
+label[for=newsletter] {
+	display: inline;
+}
+
+.hider {
+	position: absolute;
+	left: -999em;
+	top: -999em;
+	z-index: 0;
+}
+
+.user-accts {
+	border-radius: 4px;
+	background-color: #f9f9f9;
+	box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.25);
+	margin: 2em 0 1em;
+	overflow-x: scroll;
+	padding: 1em .5em .5em;
+}
+.user-accts caption {
+	color: #666;
+	font-size: 1.25em;
+	font-weight: 700;
+	padding: 0 8px 4px;
+	text-align: left;
+}
+
+/**
+ * RESPONSIVE
+ */
+@media (max-width: 799px) {
+	.item {
+		font-size: .625em;
+	}
+}
+@media (max-width: 599px) {
+	.item {
+		font-size: .5em;
+		width: 33%;
+	}
+}
+@media (max-width: 550px) {
+	.modal {
+		height: 90%;
+		overflow-y: auto;
+	}
+	.login-choices {
+		width: 92%;
+	}
+	.login-choices > div {
+		display: block;
+		width: auto;
+	}
+	.login-choices .or {
+		margin: 1em .5em .5em;
+		padding: 0;
+		position: relative;
+		width: 7.5em;
+	}
+	.or:before,
+	.or:after {
+		background: #ccc;
+		border-left: 0;
+		content: '';
+		height: 1px;
+		left: 0;
+		position: absolute;
+		top: 50%;
+		width: 40%;
+	}
+	.or:after {
+		bottom: auto;
+		left: auto;
+		right: 0;
+	}
+}
+@media (max-width: 350px) {
+	.item {
+		font-size: .5em;
+		width: 100%;
+	}
+}
+@media (min-width: 768px) {
+	.auth {
+		margin-top: 1.5em;
+	}
+}
+@media (min-width: 800px) {
+	.item {
+		font-size: 1em;
+		width: 20%;
+	}
+}
+
