@@ -1,6 +1,6 @@
 # Log In with PayPal Demo Site #
 
-## Live Site ## 
+## Live Site  
 This site is currently hosted here: https://www.paypal-labs.com/loginwithpaypal/
 
 ## Usage ##
