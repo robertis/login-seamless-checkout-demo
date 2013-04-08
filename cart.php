@@ -49,7 +49,7 @@
 				</td>
 				<td>
 					<?php if ( !isset($_SESSION['email']) || !does_user_have_paypal_id( $_SESSION['email'] ) ): ?>
-						<a href="<?=BASE_URL ?>/checkout.php" class="tiny"><img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;"></a>
+						<a href="<?=BASE_URL ?>checkout.php?paymentType=paypal&nonce=<?= $_SESSION['nonce'] ?>" class="tiny"><img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;"></a>
 					<?php endif; ?>
 				</td>
 			</tr>

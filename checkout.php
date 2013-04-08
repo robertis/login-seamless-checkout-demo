@@ -4,7 +4,7 @@
 	// if we've chosen a payment type from traditional flow
 	// OR set a preference for the streamlined flow in Admin
 	// THEN get the PP Identity Access Token and redirect to PP Express Checkout
-	if ( isset( $_POST['paymentType'] ) || ( isset( $_SESSION['fastFlow'] ) && $_SESSION['fastFlow'] === true ) ):
+	if ( (isset($_POST['paymentType']) || isset($_GET['paymentType'])) || ( isset( $_SESSION['fastFlow'] ) && $_SESSION['fastFlow'] === true ) ):
 
 		if ( verify_nonce() ) {
 			try {
