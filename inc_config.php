@@ -15,8 +15,8 @@
 	define( 'PPI_USER_INFO_URL', 'https://www.sandbox.paypal.com/webapps/auth/protocol/openidconnect/v1/userinfo' );
 
 	// PayPal checkout
-	define( 'PP_SELLER_APP_ID', 'simplebutton_sb_client_dev' );
-	define( 'PP_SELLER_APP_SECRET' , 'simplebutton_sb_client_dev' );
+	define( 'PP_SELLER_APP_ID', 'simplebutton_sb4_client' );
+	define( 'PP_SELLER_APP_SECRET' , 'simplebutton_sb4_client' );
 	define( 'PP_VERSION', '92.0' );
 	define( 'PP_USER', 'seller_1357834706_biz_api1.paypal.com' );
 	define( 'PP_PWD', '1357834725' );
