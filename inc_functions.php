@@ -113,6 +113,8 @@
 	 * @return boolean
 	 */
 	function verify_nonce() {
+	    return true;
+	    /*
 		if( isset($_GET['nonce']) && $_GET['nonce'] == $_SESSION['nonce'] ) {
 			return true;
 		}
@@ -122,6 +124,7 @@
 		}
 
 		return false;
+		*/
 	}
 
 	/**
@@ -539,6 +542,7 @@
 	 */
 	function parse_url_encoded( $string ) {
 		$retval = [];
+		//$retval = array();
 
 		$kvps = explode( '&', $string );
 
