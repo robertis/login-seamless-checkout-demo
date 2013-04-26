@@ -541,8 +541,8 @@
 	 * @return array
 	 */
 	function parse_url_encoded( $string ) {
-		$retval = [];
-		//$retval = array();
+		//$retval = [];
+		$retval = array();
 
 		$kvps = explode( '&', $string );
 
